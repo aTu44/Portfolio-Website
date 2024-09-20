@@ -1,0 +1,101 @@
+.lista__nav {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+  }
+  
+  .lista__nav a {
+    color: var(--azul-claro);
+  }
+  
+  .botão__header__responsivo {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--azul-claro);
+    cursor: pointer;
+  }
+  
+  .botão__header__responsivo::after,
+  .botão__header__responsivo::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--azul-claro);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 750px) {
+    .botão__header__responsivo {
+      display: block;
+      z-index: 1;
+    }
+  
+    .lista__nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--preto);
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
+    }
+  
+    .lista__nav a {
+      font-size: 24px;
+      opacity: 0;
+    }
+  
+    .lista__nav li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .lista__nav li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .lista__nav li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    /* Estilos ativos */
+    .cabecalho__menu {
+        justify-content: right;
+    }
+
+    .cabecalho__menu.active .lista__nav {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .cabecalho__menu.active .lista__nav a {
+      opacity: 1;
+    }
+  
+    .cabecalho__menu.active .botão__header__responsivo {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .cabecalho__menu.active .botão__header__responsivo::before {
+      transform: rotate(135deg);
+    }
+  
+    .cabecalho__menu.active .botão__header__responsivo::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  }
