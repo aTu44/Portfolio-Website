@@ -23,6 +23,10 @@ body {
     color: var(--branco);
 }
 
+a{
+    cursor: pointer;
+}
+
 .cabecalho {
     padding: 2% 0% 0% 15%;
 }
@@ -49,6 +53,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -65,7 +70,7 @@ body {
 
 }
 
-.titulo-destaque {
+.titulo_destaque {
     color: var(--azul-claro);
 }
 
@@ -111,9 +116,10 @@ body {
     background-color: var(--cor-hover);
 }
 
-.apresentacao__imagem{
+.apresentacao__imagem {
     width: 50%;
 }
+
 .rodape {
     color: var(--preto);
     background-color: var(--azul-claro);
@@ -122,4 +128,25 @@ body {
     font-family: var(--fonte-montserrat);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
 }
