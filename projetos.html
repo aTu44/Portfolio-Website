@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/projetos.css">
-    <link rel="stylesheet" href="styles/hederResponsivo.css">
+    <link rel="stylesheet" href="styles/responsivo.css">
     <script defer src="js/script.js"></script>
+
+    <link rel="stylesheet" href="styles/projetos.css">
+
 </head>
 
 <body>
+  
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <button class="botão__header__responsivo"></button>
@@ -25,24 +28,68 @@
         </nav>
     </header>
 
-
     <main class="apresentacao">
+        <h1 class="apresentacao__conteudo__titulo">Repositórios de projetos do <a class="apresentacao__github__titulo"
+                href="https://github.com/aTu44" target="_blank">GitHub:</a>
+        </h1>
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Repositórios de projetos do <a
-                    class="apresentacao__github__titulo" href="https://github.com/aTu44" target="_blank">GitHub:</a>
-            </h1>
+            <div class="conteiner__repositorio">
+                <ul class="ul__repositorio">
+                    <li class="li__repositorio">
+                        <header class="header__repositorio">
+                            <strong class="repositorio__titulo">Divine-Smite</strong>
+                            <a class="repositorio__link" href="https://github.com/aTu44/Divine-Smite" target="_blank">Ir para repositório</a>
+                        </header>
+                        <p class="repositorio__texto">Projeto desenvolvido em Java. Baseada em uma simulação de um cenário típico de jogos de RPG</p>
+                        <div class="repositorio__div__data">Criado em: <span class="repositorio__data">08/07/2024</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="conteiner__repositorio">
+                <ul class="ul__repositorio">
+                    <li class="li__repositorio">
+                        <header class="header__repositorio">
+                            <strong class="repositorio__titulo">Consulta-Cep</strong>
+                            <a class="repositorio__link" href="https://github.com/aTu44/Consulta-Cep" target="_blank">Ir para repositório</a>
+                        </header>
+                        <p class="repositorio__texto">Este projeto contém duas classes Java, que são usadas para buscar e armazenar dados da API ViaCEP, um serviço que fornece informações de endereço para códigos postais brasileiros</p>
+                        <div class="repositorio__div__data">Criado em: <span class="repositorio__data">15/07/2024</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="conteiner__repositorio">
 
-            <div class="user-repo-container">
-                <ul class="user-repo-content"></ul>
-              </div>
-    </section>
+                <ul class="ul__repositorio">
+                    <li class="li__repositorio">
+                        <header class="header__repositorio">
+                            <strong class="repositorio__titulo">Compras-com-Cartão</strong>
+                            <a class="repositorio__link" href="https://github.com/aTu44/Sistema-de-Compras-com-Cart-o-" target="_blank">Ir para repositório</a>
+                        </header>
+                        <p class="repositorio__texto">Sistema de gestão de compras com cartão de crédito. Ele permite que os usuários definam um limite de crédito, façam compras e acompanhem o saldo restante do cartão...</p>
+                        <div class="repositorio__div__data">Criado em: <span class="repositorio__data">23/07/2024</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="conteiner__repositorio">
+                <ul class="ul__repositorio">
+                    <li class="li__repositorio">
+                        <header class="header__repositorio">
+                            <strong class="repositorio__titulo">Portfolio-Website</strong>
+                            <a class="repositorio__link" href="https://github.com/aTu44/Portfolio-Website" target="_blank">Ir para repositório</a>
+                        </header>
+                        <p class="repositorio__texto">Este projeto é meu portfólio pessoal, desenvolvido em HTML e CSS. O objetivo é apresentainformações sobre mim, meus cursos, certificados e contatos de redes sociais.</p>
+                        <div class="repositorio__div__data">Criado em: <span class="repositorio__data">17/07/2024</span></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     </main>
     <footer class="rodape">
         <p>Desenvolvido por aTu</p>
 
     </footer>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
