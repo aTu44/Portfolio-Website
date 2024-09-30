@@ -46,6 +46,7 @@ a{
 
 .cabecalho__menu__link:hover {
     color: var(--ciano);
+    border-bottom: 2px solid var(--ciano);;
 }
 
 .apresentacao {
