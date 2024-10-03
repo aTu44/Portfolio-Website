@@ -49,6 +49,10 @@
     font-size: 1.50rem;
   }
 
+  .apresentacao__links__navegacao img{
+    width: 15%;
+}
+
   .botão__header__responsivo {
     display: block;
     z-index: 1;
