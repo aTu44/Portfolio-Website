@@ -21,6 +21,7 @@ body {
     box-sizing: border-box;
     background-color: var(--preto);
     color: var(--branco);
+    height: 100vh;
 }
 
 a{
@@ -113,6 +114,10 @@ a{
 
 }
 
+.apresentacao__links__navegacao img{
+    width: 10%;
+}
+
 .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
 }
@@ -147,7 +152,7 @@ a{
     }
 
     .apresentacao__conteudo {
-        width: auto;
+        width: auto;             
     }
 
 }
